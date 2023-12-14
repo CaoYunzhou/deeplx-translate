@@ -10,6 +10,7 @@
 ## 部署方式
 
 - 感谢[cloudflare](https://cloudflare.com)
+- 开通cloudflare的WorkAi功能
 - 把index.js的内容粘贴到cloudflare的work中
 - 在cloudflare > work > 触发器,配置自定义域名就可以愉快的翻译了
 
@@ -22,6 +23,43 @@ curl -X POST \
   https://deeplx.aivvm.com
 
 ```
+
+### 响应
+
+```Body
+{
+    "inputs": {
+        "text": "china",
+        "source_lang": "english",
+        "target_lang": "chinese"
+    },
+    "response": {
+        "translated_text": "中国"
+    }
+}
+```
+
+## 参考deeplx使用方式
+
+```Shell
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{"text":"Hello world","source_lang":"en","target_lang":"chinese"}' \
+  https://deeplx.aivvm.com/translate
+
+```
+
+### 响应
+
+```Body
+{
+    "code": 200,
+    "id": 1702554281366,
+    "data": "中国",
+    "alternatives": []
+}
+```
+
 
 ## 支持的翻译语种
 
