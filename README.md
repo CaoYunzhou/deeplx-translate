@@ -34,7 +34,7 @@ curl -X POST \
         "target_lang": "chinese"
     },
     "response": {
-        "translated_text": "中国"
+        "translated_text": "您好世界"
     }
 }
 ```
@@ -55,7 +55,7 @@ curl -X POST \
 {
     "code": 200,
     "id": 1702554281366,
-    "data": "中国",
+    "data": "您好世界",
     "alternatives": []
 }
 ```
