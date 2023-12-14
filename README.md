@@ -29,7 +29,7 @@ curl -X POST \
 ```Body
 {
     "inputs": {
-        "text": "china",
+        "text": "Hello world",
         "source_lang": "english",
         "target_lang": "chinese"
     },
